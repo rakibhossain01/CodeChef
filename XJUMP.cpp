@@ -1,20 +1,15 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
-int main() {
-	int t;
-	cin>>t;
-	while(t--)
-	{
-	    int n,m;
-	    cin>>n>>m;
-	    if(n<m)
-	    {
-	        cout<<n<<endl;
-	    }
-	    else
-	    {
-	        cout<<2*n-m<<endl;
-	    }
-	}
-	return 0;
+
+int main()
+{
+    int t,x,y,s;
+    cin>>t;
+    while(t--)
+    {
+        cin>>x>>y;
+        s=((x%y)+(x/y));
+        cout <<s<<endl;
+    }
+    return 0;
 }
